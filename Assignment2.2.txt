@@ -1,0 +1,47 @@
+1.HDFS:
+	*Hadoop Distributed File System.
+	*The file stored in HDFS provides scalable,fault-tolerant storage at low-cost.
+	*The HDFS software detects and compensates for hardware issues,including disk 
+problems and server failure.
+	*HDFS stores files across the collection of serverin a cluster.
+	*Files are decomposed into blocks and each block is written to more than one of 
+the servers.
+	*HDFS makes applications available for parallel processing.
+	*Features of HDFS
+		1.It is suitable for the distributed storage and processing.
+		2.Hadoop provides a command interface to interact with HDFS.
+		3.The built-in servers of namenode and datanode helps users to easily check
+the status of cluster.
+		4.Streaming access to file system data.
+		5.HDFS provides file permissions and authenication.
+
+2.Hadoop cluster:
+		A Hadoop cluster is a special type of computational cluster designed specifically
+for storing and analyzing huge amounts of unstructured data in a distributed environment.
+		Hadoop clusters are known for boosting the speed of data analysis applications.
+They are highly scalable. If a cluster's processing power is overwhelmed by growing volumes of
+data, additional cluster nodes can be added to increase throughput.Hadoop clusters are highly
+resistant to failure because each piece of data is copied onto other cluster nodes, which ensures
+that the data is not lost if one node fails.
+
+
+3.HDFS Blocks:
+	*Block:
+		A block is a smallest unit of data that can be stored or retrieved from the 
+disk. Filesystems deal with the data stored in blocks.
+	Two operations is performed:
+		*read and
+		*write
+	*HDFS Block:
+		1.HDFS stores the data in terms of blocks.
+		2.The block size is very large.
+		3.The default size of HDFS block is 64MB.
+		4.The files are split into 64MB blocks and then stored into the hadoop file
+system.
+	*Advantages:
+		1.The blocks are of fixed size,so it is very easy to calculate the number of 
+blocks that can be stored on a disk.
+		2.HDFS block concept simplifies the storage of the datanodes.The datanodes
+doesn't need to concern about the blocks metadata like fie permissions etc.
+		3.If the size of the file is less than the HDFS block size,then the file does
+not occupy the complete block storage. 
